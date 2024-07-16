@@ -15,7 +15,7 @@
                     
                 </div>
                 <div class="absolute top-0 left-0 bg-white border border-right h-full w-48 "
-                  x-show="isOpen">
+                  x-show="isOpen" @click.away="isOpen = false">
                     <div class="flex justify-end">
                         <button class="text-2xl mr-3 mt-1" @click="isOpen = false">&times;</button>
                     </div>
