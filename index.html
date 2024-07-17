@@ -6,6 +6,7 @@
     <body class="bg-gray-400">
         <div x-data="{atTop:true}">
             <nav class="p-4 w-full fixed"
+            :class="{'bg-white shadow-md' : !atTop}"
             @scroll.window="atTop = (window.pageYOffset > 20) ? false :  true">
                 Top Nav goes here
             </nav>        
