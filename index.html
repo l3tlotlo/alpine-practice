@@ -5,7 +5,8 @@
     </head>
     <body class="bg-gray-400">
         <div x-data="{atTop:true}">
-            <nav class="p-4 w-full fixed">
+            <nav class="p-4 w-full fixed"
+            @scroll.window="atTop = (window.pageYOffset > 20) ? false :  true">
                 Top Nav goes here
             </nav>        
             <div class="container mx-auto p-4 pt-16">
