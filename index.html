@@ -19,9 +19,9 @@
                 
                 <ul class="mb-6">
                     <template x-for="todo in todos" :key="todo.id">
-                        <li class="flex items-center justify-between">
+                        <li class="flex items-center justify-between mt-3">
                             <div class="flex items-center" :class="{ 'line-through' : todo.isComplete }">
-                                <input type="checkbox">
+                                <input type="checkbox" x-model="todo.isComplete">
                                 <div class="ml-3" x-text="todo.title"></div>
                             </div>
                             <button class="text-xl ml-2">&times;</button>
@@ -59,4 +59,4 @@
             }
         </script>
     </body>
-</html> 
+</html>
