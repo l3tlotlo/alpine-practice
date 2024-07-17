@@ -9,7 +9,7 @@
             x-data="{ quote:'' }"
             x-init="quote = 'Awesome quote'"
         >
-            <div class="flex items-center text-center justify-center h-screen text-2xl italic">Quote goes here</div>            
+            <div class="flex items-center text-center justify-center h-screen text-2xl italic" x-text="`&quot;${quote}&quot;`"></div>            
         </div>
     </body>
-</html> 
+</html>
